@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
   const lastName: string = "Khan";
 
   useEffect(() => {
-    let ctx = gsap.context(() => {
+    const ctx = gsap.context(() => {
       gsap
         .timeline()
         .fromTo(
