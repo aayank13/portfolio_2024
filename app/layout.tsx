@@ -18,8 +18,6 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
-        <div className="background-gradient absolute inset-0 -z-50 max-h-screen" />
-        {/* <div className="pointer-events-none absolute inset-0 -z-40 h-full bg-[url('/noisetexture.jpg')] opacity-20 mix-blend-soft-light"></div> */}
         <Analytics />
       </body>
     </html>
