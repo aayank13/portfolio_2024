@@ -69,7 +69,7 @@ const page = () => {
         <br /><br />
         As I continue to grow as a developer, I am driven by my passion for learning new technologies, solving real-world problems, and delivering impactful user experiences. I am always looking for opportunities to contribute my skills to exciting projects and collaborate with teams that share my enthusiasm for innovation and technology."
 
-        buttonLink="/Aayan_Khan_Resume.pdf" 
+        buttonLink="/Aayan-Resume.pdf" 
         buttonText="Resume" 
         avatar="/aayank_image.png"  
       />
