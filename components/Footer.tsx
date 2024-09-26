@@ -14,8 +14,8 @@ export default async function Footer() {
         { label: "Projects", link: "/projects" },
       ],
       github_link: "https://github.com/aayank13",
-      twitter_link: "/",
-      linkedin_link: "/",
+      twitter_link: "https://x.com/aayan_k14",
+      linkedin_link: "https://www.linkedin.com/in/aayank13/",
     },
   };
 
