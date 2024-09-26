@@ -24,7 +24,7 @@ const TechList = ({ title, techItems }: TechListProps): JSX.Element => {
   const component = useRef<HTMLDivElement>(null);
 
 useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
+    const ctx = gsap.context(() => {
       // create as many GSAP animations and/or ScrollTriggers here as you want...
       const tl = gsap.timeline({
         scrollTrigger: {
