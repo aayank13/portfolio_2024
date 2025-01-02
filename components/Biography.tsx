@@ -1,15 +1,19 @@
+"use client";
+
 import Avatar from "./Avatar";
 import Bounded from "@/components/Bounded";
 import Button from "@/components/Button";
 import Heading from "./Heading";
 import { StaticImageData } from "next/image";
+import { useState } from 'react';
+import ResumePopup from './ResumePopup';
 
 type BiographyProps = {
   heading: string;
-  body: string; // Assuming this is HTML or plain text
+  body: string;
   buttonLink: string;
   buttonText: string;
-  avatar: StaticImageData | string; // Adjust based on your image handling
+  avatar: StaticImageData | string;
 };
 
 const Biography = ({
@@ -19,6 +23,8 @@ const Biography = ({
   buttonText,
   avatar,
 }: BiographyProps): JSX.Element => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
   return (
     <Bounded>
       <div className="grid gap-x-8 gap-y-6 md:grid-cols-[2fr,1fr]">
@@ -32,8 +38,17 @@ const Biography = ({
         />
 
         <Button
-          linkField={buttonLink} // Standard link prop
+          linkField="#"
           label={buttonText}
+          onClick={(e) => {
+            e.preventDefault();
+            setIsPopupOpen(true);
+          }}
+        />
+
+        <ResumePopup
+          isOpen={isPopupOpen}
+          setIsOpen={setIsPopupOpen}
         />
 
         <Avatar
