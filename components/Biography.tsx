@@ -19,7 +19,6 @@ type BiographyProps = {
 const Biography = ({
   heading,
   body,
-  buttonLink,
   buttonText,
   avatar,
 }: BiographyProps): JSX.Element => {
